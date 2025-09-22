@@ -1208,7 +1208,41 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer YOUR_JWT_TOKEN"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/ai/agents/?skip=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"ai",
+										"agents",
+										""
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
 							},
 							"response": []
 						}
