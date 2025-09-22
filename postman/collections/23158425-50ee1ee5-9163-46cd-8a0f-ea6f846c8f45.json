@@ -1,0 +1,1254 @@
+{
+	"info": {
+		"_postman_id": "23158425-50ee1ee5-9163-46cd-8a0f-ea6f846c8f45",
+		"name": "CRM Platform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Channels",
+			"item": [
+				{
+					"name": "Create channel with ext platform",
+					"id": "23158425-f2e5c4d0-f1ee-46ee-9124-91b736bf80fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJrNTl6Qk9sOWJxVHp6OVNmOHBzTFJOQ0lRWUxoaXpiWGZDTzNkcmZyU1c4In0.eyJleHAiOjE3NTY5NTc0MzYsImlhdCI6MTc1Njk1NzAxNiwiYXV0aF90aW1lIjoxNzU2OTU3MDE1LCJqdGkiOiJvbnJ0YWM6ZGE3YzZkMzUtMGJlMS0zMGFmLTFkOGUtNzdjMGE2MjhmZjY3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjFhZGY4NGJlLTQyY2QtNGMzZS05YWM5LTFkZDI2MDYwMmRmMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNsYXJpa2EtYWktY3JtLWJlIiwic2lkIjoiNGYxZjgwYjQtMzAwZi00NjM2LTlmZDctNDhkNWJkYzM1NTE5IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0IiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJjbGFyaWthLWFpLWNybS1iZSI6eyJyb2xlcyI6WyJjcmVhdGVfb3JnYW5pemF0aW9uIiwibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIG9yZ2FuaXphdGlvbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJvcmdhbml6YXRpb24iOnsiT3JnYW5pemF0aW9uMSI6eyJpZCI6ImRmZTFkMDdiLTdkYzQtNDgwZC1hM2U4LWQwNDRkYjNkOGNjMCJ9fSwibmFtZSI6Im1hdGFyZHkgbWF0YXJkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hdGFyZHkiLCJnaXZlbl9uYW1lIjoibWF0YXJkeSIsImZhbWlseV9uYW1lIjoibWF0YXJkeSIsImVtYWlsIjoibWF0YXJkeUBtYWlsLmNvbSJ9.QmsHolfTyqWn53tLrSi1y2N0J2HqtyoBXzKyAgba1WRsJ5W91uc0TPIBODmI-T08a1djndM2xh2osFswCNQjoXmq41IWm9cNRQBgm0QCHLL74Wa2UpsZKreublKND-HNbUlJZEMoVLwWlFzhKcriNjN0J-HZqIZQ9pUMokFGyDheKpyTNW_D4W_l3WlGyx94ZnLWPkqOnvRSRSA5VhLTdngwMa2yndZ12tGG4ltI3WB7WgGiLqyYAMEmYYHlp5D_iYSb146G4JPmYDbtJKjLuxA0Pyvy51H67x5qkyUBGRCESrZQZUZcqmxv8PPU7_pntPYTOT8qcz-DBzQ650K6YA"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"channel_type_id\": \"260afead-fc74-4eb1-b98c-98822c7a9a40\",\n    \"name\": \"Whatsapp Channel\",\n    \"reference\": \"793622963824036\",\n    \"configuration\": {\n      \"display_name\": \"WhatsApp Test Demo\"\n    },\n    \"credentials\": {\n      \"access_token\":\"EAAaZAhYuQrkgBPJiQW2PmfhzF55vkIn2Tr7QP9ZBqTG8qOR8GJIfK1pS1uYPhTLAzLNwV1pd4wTMkXQC7wXbnAXHzigDq43vrkIGreR01hIUES3sYXXEyqd53FBYaixVnjNAIGI2a9FR59Sl6XjBfdalo0T1tlfiA0HzzcJtaXQNw1s5Qjg3wk9HvXGss4KwZDZD\",\n      \"verify_token\": \"clarika_webhook_2024_secure\",\n      \"phone_number_id\": \"793622963824036\",\n      \"business_account_id\": \"610490018793772\",\n      \"app_secret\": \"886d6c2585ab61ea60141ec823c5232c\"\n    }\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/channels/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"channels",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Channels",
+					"id": "23158425-f4566c51-0e04-4699-8c9d-fc4bd76a5bf9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJrNTl6Qk9sOWJxVHp6OVNmOHBzTFJOQ0lRWUxoaXpiWGZDTzNkcmZyU1c4In0.eyJleHAiOjE3NTY5NTI0NTIsImlhdCI6MTc1Njk1MjAzMiwiYXV0aF90aW1lIjoxNzU2OTUxMzU4LCJqdGkiOiJvbnJ0YWM6YzA0ZWY2NGMtN2VmNy1mOWZlLTRhZmItNjBiZjE5OWI3MzJjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjFhZGY4NGJlLTQyY2QtNGMzZS05YWM5LTFkZDI2MDYwMmRmMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNsYXJpa2EtYWktY3JtLWJlIiwic2lkIjoiYmM1Njg4MzQtN2M0OS00ODI3LWE0N2QtY2MwOTZhNzgwOWNiIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0IiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJjbGFyaWthLWFpLWNybS1iZSI6eyJyb2xlcyI6WyJjcmVhdGVfb3JnYW5pemF0aW9uIiwibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIG9yZ2FuaXphdGlvbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJvcmdhbml6YXRpb24iOnsiT3JnYW5pemF0aW9uMSI6eyJpZCI6ImRmZTFkMDdiLTdkYzQtNDgwZC1hM2U4LWQwNDRkYjNkOGNjMCJ9fSwibmFtZSI6Im1hdGFyZHkgbWF0YXJkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hdGFyZHkiLCJnaXZlbl9uYW1lIjoibWF0YXJkeSIsImZhbWlseV9uYW1lIjoibWF0YXJkeSIsImVtYWlsIjoibWF0YXJkeUBtYWlsLmNvbSJ9.iBXNRL1fQRN-gSPqQvPVlsNs1LqwEQgsQrJD9EI78U5gCpt-UT0-Er0txqRGmVo3II29SiSiO-zwmorzgNTt2AihEqGTIp_K-y8wRz_3z17WgGigmHurxyXX4euKQxnblZzuUWbfaPqNC7oGNaQA9L_eA760PbwvS0bh0VLWsSWG7aSC79g_B0UgxFZjGLGx_k6U5uecUOiuYlzvCTDDiOv4BwVuvBbfuGavSj1FhxVjj36RJ48NjG-MO7Lb1VSts4ZodRQN0OglrrNFl8AJ8JvL_nysGbRqyOOIHpUlKDGqHC66Zv1vWgC2oB73mEi0-omJO2k9lkpfcyg43w-xXw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/channels/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"channels",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "23158425-e441e30f-f59d-4392-8bbe-65bd8a3e816c"
+		},
+		{
+			"name": "Conversations",
+			"item": [
+				{
+					"name": "Get Conversations",
+					"id": "23158425-a8dc4206-c0ac-4de4-b3d4-b4971ccd6179",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/conversations/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"conversations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get conversation by id",
+					"id": "23158425-94bd4736-fb0e-42e0-a34f-331f6761912c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJrNTl6Qk9sOWJxVHp6OVNmOHBzTFJOQ0lRWUxoaXpiWGZDTzNkcmZyU1c4In0.eyJleHAiOjE3NTY5OTcxODMsImlhdCI6MTc1Njk5Njc2MywiYXV0aF90aW1lIjoxNzU2OTk2NzYzLCJqdGkiOiJvbnJ0YWM6ZDkxNjM0OWEtNzEzNS0zMjVkLTZhYjktYmI1YzhkOWEwMzA5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjFhZGY4NGJlLTQyY2QtNGMzZS05YWM5LTFkZDI2MDYwMmRmMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNsYXJpa2EtYWktY3JtLWJlIiwic2lkIjoiMWEwMmJiZGEtZTFkZi00MDY3LWEzYmYtNDgxM2JhNGJhZDY3IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0IiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJjbGFyaWthLWFpLWNybS1iZSI6eyJyb2xlcyI6WyJjcmVhdGVfb3JnYW5pemF0aW9uIiwibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIG9yZ2FuaXphdGlvbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJvcmdhbml6YXRpb24iOnsiT3JnYW5pemF0aW9uMSI6eyJpZCI6ImRmZTFkMDdiLTdkYzQtNDgwZC1hM2U4LWQwNDRkYjNkOGNjMCJ9fSwibmFtZSI6Im1hdGFyZHkgbWF0YXJkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hdGFyZHkiLCJnaXZlbl9uYW1lIjoibWF0YXJkeSIsImZhbWlseV9uYW1lIjoibWF0YXJkeSIsImVtYWlsIjoibWF0YXJkeUBtYWlsLmNvbSJ9.fH72NgoAy92mhG4OHk6GvN0EyAxj7c2G1Ota4DfRaNa910RI-047gpI-fa-PWYFg55sqZMc6bccsK9tuAEhnCeYvmEVXpFp5mXWZpBbrtNqdOpGYyW4TxIOmJYqMzHPsHeJ6pOoqurs2TeeVgfj9HDVis36C10Bd0By-4Khb8oZLXG4WC4cGpzDP2JI-CW3nD5DQTAaD8tAzO-hnYyGucGvoYoRlPdqg-Cvf9Gxa4e8--FseEXL-BQ7e77pSnEoRfSA8-LNVY6PMX08MFeIDOwuKTmUPRUVtyb_ofca5MGhI3whKuDUhfe45LVMJTe0acR6q9qkSMqz068uzZk1RPQ"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost/chats/1"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/conversations/590bd3e9-0a9c-43bd-b74e-89bb5bfd8367",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"conversations",
+								"590bd3e9-0a9c-43bd-b74e-89bb5bfd8367"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get messages conversation",
+					"id": "23158425-6d7bc512-cec5-4b65-9711-e5148c377ea6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJrNTl6Qk9sOWJxVHp6OVNmOHBzTFJOQ0lRWUxoaXpiWGZDTzNkcmZyU1c4In0.eyJleHAiOjE3NTY5OTcxODMsImlhdCI6MTc1Njk5Njc2MywiYXV0aF90aW1lIjoxNzU2OTk2NzYzLCJqdGkiOiJvbnJ0YWM6ZDkxNjM0OWEtNzEzNS0zMjVkLTZhYjktYmI1YzhkOWEwMzA5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjFhZGY4NGJlLTQyY2QtNGMzZS05YWM5LTFkZDI2MDYwMmRmMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNsYXJpa2EtYWktY3JtLWJlIiwic2lkIjoiMWEwMmJiZGEtZTFkZi00MDY3LWEzYmYtNDgxM2JhNGJhZDY3IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0IiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJjbGFyaWthLWFpLWNybS1iZSI6eyJyb2xlcyI6WyJjcmVhdGVfb3JnYW5pemF0aW9uIiwibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIG9yZ2FuaXphdGlvbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJvcmdhbml6YXRpb24iOnsiT3JnYW5pemF0aW9uMSI6eyJpZCI6ImRmZTFkMDdiLTdkYzQtNDgwZC1hM2U4LWQwNDRkYjNkOGNjMCJ9fSwibmFtZSI6Im1hdGFyZHkgbWF0YXJkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hdGFyZHkiLCJnaXZlbl9uYW1lIjoibWF0YXJkeSIsImZhbWlseV9uYW1lIjoibWF0YXJkeSIsImVtYWlsIjoibWF0YXJkeUBtYWlsLmNvbSJ9.fH72NgoAy92mhG4OHk6GvN0EyAxj7c2G1Ota4DfRaNa910RI-047gpI-fa-PWYFg55sqZMc6bccsK9tuAEhnCeYvmEVXpFp5mXWZpBbrtNqdOpGYyW4TxIOmJYqMzHPsHeJ6pOoqurs2TeeVgfj9HDVis36C10Bd0By-4Khb8oZLXG4WC4cGpzDP2JI-CW3nD5DQTAaD8tAzO-hnYyGucGvoYoRlPdqg-Cvf9Gxa4e8--FseEXL-BQ7e77pSnEoRfSA8-LNVY6PMX08MFeIDOwuKTmUPRUVtyb_ofca5MGhI3whKuDUhfe45LVMJTe0acR6q9qkSMqz068uzZk1RPQ"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost/chats/1"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"139\", \"Not;A=Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/messages/conversation/1?page=1&per_page=50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"messages",
+								"conversation",
+								"1"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "per_page",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assign",
+					"id": "23158425-def1db5f-33e3-4f4d-a553-356f4736bd05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJrNTl6Qk9sOWJxVHp6OVNmOHBzTFJOQ0lRWUxoaXpiWGZDTzNkcmZyU1c4In0.eyJleHAiOjE3NTcwMTkyNjYsImlhdCI6MTc1NzAxODg0NiwiYXV0aF90aW1lIjoxNzU3MDE3NTM5LCJqdGkiOiJvbnJ0YWM6YzFiZGY1MzktMjM2MC05YTFiLTE2YzAtYTQyYzE3ZDE0YzgxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjFhZGY4NGJlLTQyY2QtNGMzZS05YWM5LTFkZDI2MDYwMmRmMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNsYXJpa2EtYWktY3JtLWJlIiwic2lkIjoiZGZmNmY2MzQtMjY3Yy00NmViLWJhN2UtMmRkYmFlNGFiYmMzIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0IiwiaHR0cDovL2xvY2FsaG9zdDo0MjAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJjbGFyaWthLWFpLWNybS1iZSI6eyJyb2xlcyI6WyJjcmVhdGVfb3JnYW5pemF0aW9uIiwibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIG9yZ2FuaXphdGlvbiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJvcmdhbml6YXRpb24iOnsiT3JnYW5pemF0aW9uMSI6eyJpZCI6ImRmZTFkMDdiLTdkYzQtNDgwZC1hM2U4LWQwNDRkYjNkOGNjMCJ9fSwibmFtZSI6Im1hdGFyZHkgbWF0YXJkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hdGFyZHkiLCJnaXZlbl9uYW1lIjoibWF0YXJkeSIsImZhbWlseV9uYW1lIjoibWF0YXJkeSIsImVtYWlsIjoibWF0YXJkeUBtYWlsLmNvbSJ9.KtX7vDC0C_me3QGg3amNlfKv0IAuT4NVHNqk1QOJNvOTfj6ugVw6oltzDPFU9xuDT6LZz-CYCcQptZCSS9UuTh1QqukIwpTL_2SHhJp127yfuJzLXxrb1rh5rcCTpVmA5ZduPRrPM4BjSSUdl2iVoRx6pjnT3cuUCqMdCtkp_ZgpKxgBi__GmsEE3R7ahyrk0u1OWh2VfBTyZ9a4dKNN1aGbCizRU-k6vZVXwSFSTkfMhWYZbYj7Uah3rX1wseEwhbLgMKt7ZVzrrNuFxS-MKSxoEVhSp5ma4wJUYljYj2x6oL3QZvMWJQu1iLPm3DvCpBSmTvRRlDbo8Ae3jV0ylw"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/conversation-assignments/assign?conversation_id=1&keycloak_user_id=1adf84be-42cd-4c3e-9ac9-1dd260602df3&agent_type=human",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"conversation-assignments",
+								"assign"
+							],
+							"query": [
+								{
+									"key": "conversation_id",
+									"value": "1"
+								},
+								{
+									"key": "keycloak_user_id",
+									"value": "1adf84be-42cd-4c3e-9ac9-1dd260602df3"
+								},
+								{
+									"key": "agent_type",
+									"value": "human"
+								},
+								{
+									"key": "agent_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "23158425-e5257f8d-99e5-4349-92d8-e64cb8417c68"
+		},
+		{
+			"name": "Pipelines",
+			"item": [
+				{
+					"name": "Pipelines Types",
+					"item": [
+						{
+							"name": "List pipelines types",
+							"id": "23158425-d40edd23-83d4-4700-9b2d-26dad3ea7165",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipeline-types/?skip=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"pipeline-types",
+										""
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create pipelines types",
+							"id": "23158425-1e5cf35a-5e0b-487b-a927-7083cd6aff8f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"funnel\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipeline-types/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"pipeline-types",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-d2701bbd-1546-4741-8236-fc96652e23dc"
+				},
+				{
+					"name": "Stages-types",
+					"item": [
+						{
+							"name": "Get stage types",
+							"id": "23158425-c9c6faf1-727c-4d82-b419-cf27e4a4043d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/stage-types/?skip=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"stage-types",
+										""
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create stage type",
+							"id": "23158425-12d6ad4c-1cb6-4ff0-b2d7-ee594de7208d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Funnel\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/stage-types/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"stage-types",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-041f8118-0698-4711-9c44-96b6bc182b60"
+				},
+				{
+					"name": "Stages",
+					"item": [
+						{
+							"name": "List stages",
+							"id": "23158425-39d1b96e-0600-4db1-a50d-e647a72d795b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/stages/?skip=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"stages",
+										""
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create stage",
+							"id": "23158425-046ee59c-da35-474b-a49e-04181ec7369d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"pipeline_id\": 1,\n  \"stage_type_id\": 1,\n  \"name\": \"IN PROGRESS\",\n  \"description\": \"IN PROGRESS\",\n  \"order_index\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/stages/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"stages",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List stages by pipeline",
+							"id": "23158425-f1cc379b-7b5c-4661-82e2-bbbc195f1b29",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/stages/pipeline/1?skip=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"stages",
+										"pipeline",
+										"1"
+									],
+									"query": [
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "move conversation between stages",
+							"id": "23158425-9aa0487d-55f9-493f-b73b-0181007f6058",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"stage_id\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/conversations/9/stage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"conversations",
+										"9",
+										"stage"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-865a50dd-d5f8-4104-97cd-c5276c4fb736"
+				},
+				{
+					"name": "Create pipeline",
+					"id": "23158425-ad25ffd0-5e9d-4858-b723-5672c716a4da",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pipeline_type_id\": 1,\n  \"name\": \"Funnel test\",\n  \"description\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipelines/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"pipelines",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get pipeline by id",
+					"id": "23158425-35d8f018-f660-4101-a5a1-7cdc63f134ff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipelines/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"pipelines",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List pipelines",
+					"id": "23158425-c34b1ea0-f1eb-4470-bb07-4b4cfbade475",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipelines/?skip=0&limit=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"pipelines",
+								""
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get conversation pipelines",
+					"id": "23158425-504acebb-9dbf-4b6e-81ad-61bf37797f4d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/pipelines/1/conversations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"pipelines",
+								"1",
+								"conversations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "23158425-b2dcda51-c2e6-4e97-99cd-f09961564736"
+		},
+		{
+			"name": "Organizations",
+			"item": [
+				{
+					"name": "Create organization",
+					"id": "23158425-28653c1b-efcc-4196-a8f8-50607475489a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/organizations/?q=c&skip=0&limit=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"organizations",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "c"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "23158425-04b73ffb-e3d5-4d56-ab8f-c4900d91a4e6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ2YzVGd2JNRnJjOEhrWTE2bmR1d19FenBVTkJPTl8zSDlaaHRMYkNuZm04In0.eyJleHAiOjE3NTgxMzE2NDAsImlhdCI6MTc1ODEzMTIyMCwiYXV0aF90aW1lIjoxNzU4MTMxMjIwLCJqdGkiOiJvbnJ0YWM6MzU3ZDdkZDctNTE2OS1kYTY2LTM3NTctOWNlZmQ5ODgwYzE0IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9zZWN1cml0eS9yZWFsbXMvbWFzdGVyIiwiYXVkIjpbIm1hc3Rlci1yZWFsbSIsImFjY291bnQiXSwic3ViIjoiNDhkOTQ5ZjMtNjFhYi00NDBlLWFjNGEtZmM5NzBlNDU2YmI3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2xhcmlrYS1haS1jcm0tYmUiLCJzaWQiOiI0MjJiNjM5OC1jN2VlLTQ5ZTMtYTZjNi0xMmZhYWYyNmViMzgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3QiLCJodHRwOi8vbG9jYWxob3N0OjQyMDAiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJhZG1pbiIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiY2xhcmlrYS1haS1jcm0tYmUiOnsicm9sZXMiOlsibWFuYWdlX3BsYXRmb3JtX29yZyIsIm1hbmFnZV9vd25fb3JnIl19LCJtYXN0ZXItcmVhbG0iOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUgb3JnYW5pemF0aW9uIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzdXBlcmFkbWluIn0.IMeNfXVyCmGqn7HMEw8Qi4JOLsDY8rkFxe3sH040JqWlwe0q-czmaNU1hcx_yYixT8415H4IVoIEgZ4LUHT1HssJmQ0VTrxOsmfKGm4SRDdFB3pNX4Ey14D0cmkIAbEkCsglr_Hz0AruvZ0AsR9lrGKYjnRHNDlhmqF-2belPCi1ysTP2myzZTzVx3XoEnn7SXBUldmieIVolShMltdGByUP7ZBSUj2fluH0secR-v-L2-8j7FQDzRnn4Y3v8eKQjBWupMb_vp4Z9pxybWCu2WskV0rTj6TNI2DQ6bRUXRkRXQfmlH3CY9Wgyf1CIfysuQxId2IioXaVFfDhFxQZ9g"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "DNT",
+								"value": "1"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost/organizations"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							}
+						],
+						"url": {
+							"raw": "http://localhost/clarika-ai-crm-be/api/v1/organizations/?q=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"clarika-ai-crm-be",
+								"api",
+								"v1",
+								"organizations",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "23158425-52a6ed46-834c-4d0c-9352-96f76b3e6918"
+		},
+		{
+			"name": "AI Agents",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "Create Platform",
+							"id": "23158425-1fa366a4-ad0e-44bf-b5c2-651c6aac2798",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "changeme-admin",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"platform_name\": \"Ese Platform Local\",\r\n  \"description\": \"Plataforma de testing\",\r\n  \"contact_email\": \"hola@mail.com\",\r\n  \"webhook_url\": \"http://test@test.com\",\r\n  \"webhook_secret\": \"Tampoco\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-agents-be/api/v1/admin/platforms/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-agents-be",
+										"api",
+										"v1",
+										"admin",
+										"platforms",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-0cccf34a-e215-4fa2-97f2-0c6265aba26a"
+				},
+				{
+					"name": "Platform",
+					"item": [
+						{
+							"name": "Create Organization",
+							"id": "23158425-b5bcf2d9-fa85-4601-ae0b-1fe5b1a609a9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "agent_live_mu4jLBIWIJBEmNtnDaSuFvvCV5h8MMvUvjkir7ABKas",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Organizacion Ese\",\r\n  \"description\": \"La organizacion de Ese para pruebas\",\r\n  \"contact_email\": \"ese@ese.com\",\r\n  \"max_agents\": 0,\r\n  \"max_invocations_per_month\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-agents-be/api/v1/orgs/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-agents-be",
+										"api",
+										"v1",
+										"orgs",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-45092c58-bacd-40d0-a4a7-65772847c7b2"
+				},
+				{
+					"name": "Agents",
+					"item": [
+						{
+							"name": "List templates",
+							"id": "23158425-0f1835f5-9161-46b4-8eb5-a0f15ae26997",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/ai/agents/templates",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"ai",
+										"agents",
+										"templates"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Agent",
+							"id": "23158425-ce61f7eb-1656-4a5c-a94a-e66b3355ff95",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "23158425-acf322ca-8d5e-4bdc-a40f-8c6a742cd215",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "23158425-f28cc29a-e371-4922-9266-7732bb18c4b2"
+				}
+			],
+			"id": "23158425-860d5b30-33c0-465b-aa0f-ee03d06ca853"
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientId",
+				"value": "postman-oauth",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "http://localhost/security/realms/master/protocol/openid-connect/auth",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "openid profile email",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "http://localhost/security/realms/master/protocol/openid-connect/token",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/callback",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code_with_pkce",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "Keycloack-PKCE",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "20826e98-7af0-4dcd-b53d-6db35e6cfd0d",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d20e841c-d656-4c77-a71b-deb6b4c57e2f",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
