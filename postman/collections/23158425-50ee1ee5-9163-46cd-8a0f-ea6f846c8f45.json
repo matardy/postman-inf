@@ -1164,7 +1164,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "List agents",
 							"id": "23158425-acf322ca-8d5e-4bdc-a40f-8c6a742cd215",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
