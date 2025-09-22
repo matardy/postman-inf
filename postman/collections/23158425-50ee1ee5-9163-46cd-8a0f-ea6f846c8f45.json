@@ -1158,8 +1158,45 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer YOUR_JWT_TOKEN"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Mi Agente de Soporte\",\n  \"agent_template\": \"help_desk\",\n  \"detail\": \"Agente especializado en atención al cliente\",\n  \"is_active\": true,\n  \"default_pipeline_id\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/clarika-ai-crm-be/api/v1/ai/agents/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"clarika-ai-crm-be",
+										"api",
+										"v1",
+										"ai",
+										"agents",
+										""
+									]
+								}
 							},
 							"response": []
 						},
